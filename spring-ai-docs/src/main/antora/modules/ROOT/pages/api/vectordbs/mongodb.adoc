@@ -163,7 +163,7 @@ List<Document> results = vectorStore.similaritySearch(
 ----
 
 == Metadata Filtering
-Metadata filtering allows for more refined queries by filtering results based on specified metadata fields. This feature uses MongoDB's query language to perform filtering operations in conjunction with vector searches.
+Metadata filtering allows for more refined queries by filtering results based on specified metadata fields. This feature uses the MongoDB Query API to perform filtering operations in conjunction with vector searches.
 
 === Filter Expressions
 The `MongoDBAtlasFilterExpressionConverter` class converts filter expressions into MongoDB Atlas metadata filter expressions. The supported operations include:
@@ -179,7 +179,7 @@ The `MongoDBAtlasFilterExpressionConverter` class converts filter expressions in
 - `$in`
 - `$nin`
 
-These operations enable complex filtering logic to be applied to metadata fields associated with documents in the vector store.
+These operations enable filtering logic to be applied to metadata fields associated with documents in the vector store.
 
 === Example of a Filter Expression
 Here’s an example of how to use a filter expression in a similarity search:
