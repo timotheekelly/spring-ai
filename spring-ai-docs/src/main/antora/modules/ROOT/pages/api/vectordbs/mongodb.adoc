@@ -12,9 +12,9 @@ It uses the `$vectorSearch` aggregation stage.
 
 == Prerequisites
 
-- An Atlas cluster running MongoDB version 6.0.11, 7.0.2, or later. Ensure that your IP address is included in your Atlas project’s https://www.mongodb.com/docs/atlas/security/ip-access-list/#std-label-access-list[access list].
+- An Atlas cluster running MongoDB version 6.0.11, 7.0.2, or later. To get started with MongoDB Atlas, you can follow the instructions https://www.mongodb.com/docs/atlas/getting-started/[here]. Ensure that your IP address is included in your Atlas project’s https://www.mongodb.com/docs/atlas/security/ip-access-list/#std-label-access-list[access list].
     
-- An `EmbeddingModel` instance to compute the document embeddings. Several options are available.
+- An `EmbeddingModel` instance to compute the document embeddings. Several options are available. Refer to the https://docs.spring.io/spring-ai/reference/api/embeddings.html#available-implementations[EmbeddingModel] section for more information.
     
 - An environment to set up and run a Java application.
 
@@ -197,4 +197,4 @@ List<Document> results = vectorStore.similaritySearch(
 );
 ----
 
-If you would like to try out SpringAI with MongoDB, see https://www.mongodb.com/docs/atlas/atlas-vector-search/ai-integrations/spring-ai/#std-label-spring-ai[Get Started with the Spring AI Integration].
+If you would like to try out Spring AI with MongoDB, see https://www.mongodb.com/docs/atlas/atlas-vector-search/ai-integrations/spring-ai/#std-label-spring-ai[Get Started with the Spring AI Integration].
